@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/widgets/currency_card.dart';
-
-import 'widgets/button.dart';
+import 'package:toonflix/screens/home_screen.dart';
 
 void main() {
   runApp(const App());
@@ -13,6 +11,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: HomeScreen(),
+    );
+    /*  return MaterialApp(
       home: Scaffold(
         backgroundColor: const Color(0xFF181818),
         body: SingleChildScrollView(
@@ -138,5 +139,6 @@ class App extends StatelessWidget {
         ),
       ),
     );
+  }*/
   }
 }
